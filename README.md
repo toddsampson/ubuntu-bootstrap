@@ -4,4 +4,4 @@ Simple script I use to setup Docker, Docker Compose and ROS Indigo under Ubuntu 
 
 ## To run the script...
 
-`wget -qO- https://raw.githubusercontent.com/toddsampson/ubuntu-bootstrap/master/bootstrap.sh | sh`
+`wget -qO- https://raw.githubusercontent.com/toddsampson/ubuntu-bootstrap/master/bootstrap.sh | /bin/bash`

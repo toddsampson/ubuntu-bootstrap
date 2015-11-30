@@ -18,9 +18,11 @@ catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
-# Setup Docker Engine and Docker Compose
+# Setup Docker Engine
 curl -sSL https://get.docker.com/ | sh
-sudo su
-curl -L https://github.com/docker/compose/releases/download/1.5.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-exit
+sudo usermod -aG docker `whoami`
+sudo service docker start
+
+# Setup Docker Compose
+sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/1.5.1/docker-compose-`uname -s`-`uname -m`
+sudo chmod +x /usr/local/bin/docker-compose

@@ -8,6 +8,7 @@ sudo apt-get update
 sudo apt-get -y install ros-indigo-desktop-full
 sudo rosdep init
 rosdep update
+source /opt/ros/indigo/setup.bash
 sudo apt-get -y install python-rosinstall
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src

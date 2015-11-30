@@ -1,6 +1,6 @@
 # Ubuntu Bootstrap
 
-Simple script I use to configure Docker, Docker Compose and ROS Indigo under Ubuntu 14.04.
+Simple script I use to setup Docker, Docker Compose and ROS Indigo under Ubuntu 14.04.
 
 ## To run the script...
 
